@@ -12,7 +12,7 @@ A really basic example:
     }
   }
 
-And if you want to update the DNS record with a different interface:
+And if you want to update the DNS record with an IP from a different interface:
   node 'db.mynode.com' inherits 'default {
     dyn_module::add_a_record {'db.mynode.com':
       customer_name => 'your_company_name',
