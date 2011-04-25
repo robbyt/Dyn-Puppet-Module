@@ -2,7 +2,7 @@
 This module will allow you to work with the Dynect platform via puppet. All of the ruby plugin code was written by kgray87 from dyn, and the puppet module work was done by rterhaar@atlanticdynamic.com 
 
 = Warning
-Once you check this module out, you should name the module directory "dyn_module" to match the origional module name chosen by dyn. e.g., /etc/puppet/modules/dyn_module
+Once you check this module out, you should name the module directory "dyn_module" to match the original module name chosen by dyn. e.g., /etc/puppet/modules/dyn_module
 
 = Usage
 
