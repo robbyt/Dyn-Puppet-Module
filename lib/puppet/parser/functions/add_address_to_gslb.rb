@@ -12,7 +12,7 @@ module Puppet::Parser::Functions
 	ZONE = args[3]
 	FQDN = args[4]
 	REGION = args[5]
-	IPADDR = lookupvar('ipaddress')
+	IPADDR = args[6]
 
 	# replace any spaces in the region with the request string replacement %20
 	REGION.gsub!(" ", "%20")

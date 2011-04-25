@@ -12,7 +12,7 @@ module Puppet::Parser::Functions
 	PASSWORD = args[2]
 	ZONE = args[3]
 	FQDN = args[4]
-	IPADDR = lookupvar('ipaddress')
+	IPADDR = args[5]
 
 	# Set up our HTTP object with the required host and path
 	url = URI.parse('https://api2.dynect.net/REST/Session/')
