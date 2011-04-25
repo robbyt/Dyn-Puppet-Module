@@ -5,7 +5,7 @@ This module will allow you to work with the Dynect platform via puppet. All of t
 
 A really basic example:
   node 'www.mynode.com' inherits 'default {
-    dyn_module::add_a_record {"www.mynode.com":
+    dyn_module::add_a_record {'www.mynode.com':
       customer_name => 'your_company_name',
       user_name     => 'your_user_name',
       password      => 'your_password',
@@ -14,7 +14,7 @@ A really basic example:
 
 And if you want to update the DNS record with a different interface:
   node 'db.mynode.com' inherits 'default {
-    dyn_module::add_a_record {"db.mynode.com":
+    dyn_module::add_a_record {'db.mynode.com':
       customer_name => 'your_company_name',
       user_name     => 'your_user_name',
       password      => 'your_password',
