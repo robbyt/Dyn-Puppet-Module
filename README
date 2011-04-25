@@ -1,1 +1,24 @@
-Docs go here
+= Intro
+This module will allow you to work with the Dynect platform via puppet. All of the ruby plugin code was written by kgray87 from dyn, and the puppet module work was done by rterhaar@atlanticdynamic.com
+
+= Usage
+
+A really basic example:
+  node 'www.mynode.com' inherits 'default {
+    dyn_module::add_a_record {"www.mynode.com":
+      customer_name => 'your_company_name',
+      user_name     => 'your_user_name',
+      password      => 'your_password',
+    }
+  }
+
+And if you want to update the DNS record with a different interface:
+  node 'db.mynode.com' inherits 'default {
+    dyn_module::add_a_record {"db.mynode.com":
+      customer_name => 'your_company_name',
+      user_name     => 'your_user_name',
+      password      => 'your_password',
+      dynect_ip     => "$ipaddress_eth1",
+    }
+  }
+
